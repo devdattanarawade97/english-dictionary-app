@@ -1,0 +1,71 @@
+body {
+  background-color: aqua;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: antiquewhite;
+  color: black;
+
+  border-radius: 20px;
+  min-width: fit-content;
+  width: 50%;
+
+  margin-top: 150px;
+  box-shadow: 10px -10px salmon;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#input {
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  border: solid thistle;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#ans-container {
+  text-align: center;
+  display: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#info {
+  color: rgb(245, 32, 8);
+  font-weight: 700;
+  font-size: 20px;
+  display: none;
+}
+#input::selection {
+  border: solid black;
+}
+
+audio {
+  padding: 20px;
+
+  margin: 30px;
+}
+
+.ans {
+  color: rgb(245, 32, 8);
+}
+.ans-val {
+  color: black;
+}

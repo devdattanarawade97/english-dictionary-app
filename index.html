@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meaningo dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <h1 id="app-header">English dictionary</h1>
+        <input type="text" id="input" placeholder="search keyword" value="" />
+
+        <p>type word and press enter</p>
+        <p id="info">pls enter word!!!</p>
+        <div id="ans-container">
+          <div id="entered-word" class="ans">
+            Word Title :
+            <span id="inputWord" class="ans-val"></span>
+          </div>
+          <div id="meaning" class="ans">
+            Meaning :
+            <span id="mean" class="ans-val"></span>
+          </div>
+          <div id="example-container" class="ans">
+            example :
+            <span id="example" class="ans-val"></span>
+          </div>
+          <audio src="" controls id="audio"></audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
