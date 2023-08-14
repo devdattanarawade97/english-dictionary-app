@@ -8,6 +8,8 @@ const mean = document.getElementById('mean');
 const info = document.getElementById('info');
 const example = document.getElementById('example');
 const audio = document.getElementById('audio');
+const donateUsButton = document.getElementById('donate');
+const writeUsEmail = document.getElementById('write-us');
 
 function showAns(e) {
 
@@ -16,15 +18,14 @@ function showAns(e) {
     //  console.log(inputValue);
     if (inputValue && e.key === 'Enter') {
 
-
         reset();
         fetchMeaning(inputValue);
 
         ansContainer.style.display = 'block';
 
     } else if (e.key === 'Enter') {
-
-        error.style.display = 'block';
+        info.innerText = "pls enter word !!!";
+        info.style.display = 'block';
 
     }
 
@@ -86,3 +87,32 @@ function reset() {
 }
 
 input.addEventListener('keyup', showAns);
+
+
+function showUPI() {
+
+    donateUsButton.innerText = "Using UPI- devdattan@fbl";
+
+}
+donateUsButton.addEventListener('mouseover', showUPI);
+
+function hideUPI() {
+
+    donateUsButton.innerText = "Donate";
+
+}
+donateUsButton.addEventListener('mouseout', hideUPI);
+
+function showEmail() {
+
+    writeUsEmail.innerText = "service@meaningo.co.in";
+
+}
+writeUsEmail.addEventListener('mouseover', showEmail);
+
+function hideEmail() {
+
+    writeUsEmail.innerText = "write us";
+
+}
+writeUsEmail.addEventListener('mouseout', hideEmail);
