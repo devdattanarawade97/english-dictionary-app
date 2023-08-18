@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meaningo dictionary</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="index.js" defer></script>
   </head>
   <body>
-   <div class="button-container">
-    <button id="donate">Donate</button>
-    <button id="write-us">write us</button>
-   </div>
+    <div class="nav-container">
+      <div class="link-container">
+        <a href="" id="donate-link" title="coming soon">Donate</a>
+        <!---->
+        <a href="mailto:service@meaningo.co.in" id="write-us-link">Write us</a>
+        <a id="night-mode" title="coming soon">Night mode</a>
+      </div>
+    </div>
     <div class="container">
-      <h1 id="app-header">English dictionary</h1>
+      <h1 id="app-header">Meaningo Dictionary</h1>
       <input type="text" id="input" placeholder="search keyword" value="" />
-
-      <p>type word and press enter</p>
+      <button class="" id="search-button">Search</button>
+      <p id="instruction">Type Word and Press Enter</p>
       <p id="info">pls enter word!!!</p>
       <div id="ans-container">
         <div id="entered-word" class="ans">
@@ -34,7 +45,7 @@
         <audio src="" controls id="audio"></audio>
       </div>
     </div>
-
-    
   </body>
+
+  <footer></footer>
 </html>
